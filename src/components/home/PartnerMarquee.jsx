@@ -1,0 +1,44 @@
+export default function PartnerMarquee() {
+    const partners = [
+        "Dell Technologies", "RedHat", "VMware", "Microsoft Azure", "ServiceNow", "OpenStack", "Ansible", "Terraform"
+    ];
+    const allPartners = [...partners, ...partners];
+
+    return (
+        <div className="w-full bg-white py-16 overflow-hidden border-b border-gray-100 relative z-20">
+            <div className="text-center mb-10">
+                <h3 className="text-sm font-mono tracking-widest uppercase text-gray-400">Integrated Ecosystem</h3>
+            </div>
+
+            <div className="relative flex overflow-x-hidden group">
+                <div className="animate-marquee whitespace-nowrap flex items-center">
+                    {allPartners.map((partner, index) => (
+                        <span
+                            key={index}
+                            className="mx-12 text-2xl md:text-4xl font-heading font-bold text-gray-200 transition-colors duration-300 hover:text-accent select-none"
+                        >
+                            {partner}
+                        </span>
+                    ))}
+                </div>
+                <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center">
+                    {allPartners.map((partner, index) => (
+                        <span
+                            key={`dup-${index}`}
+                            className="mx-12 text-2xl md:text-4xl font-heading font-bold text-gray-200 transition-colors duration-300 hover:text-accent select-none"
+                        >
+                            {partner}
+                        </span>
+                    ))}
+                </div>
+            </div>
+
+            <style>{`
+        .animate-marquee { animation: marquee 35s linear infinite; }
+        .animate-marquee2 { animation: marquee2 35s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-100%); } }
+        @keyframes marquee2 { 0% { transform: translateX(100%); } 100% { transform: translateX(0%); } }
+      `}</style>
+        </div>
+    );
+}
