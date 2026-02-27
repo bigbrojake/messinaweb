@@ -17,8 +17,8 @@ export default function Manifesto() {
                 const words = text.split(' ');
                 words.forEach(word => {
                     const span = document.createElement('span');
-                    span.className = 'inline-block opacity-0 translate-y-4 mr-2 or-3';
-                    span.innerText = word + ' ';
+                    span.className = 'inline-block opacity-0 translate-y-4';
+                    span.innerHTML = word + '&nbsp;';
                     textRef.current.appendChild(span);
                 });
 

@@ -20,7 +20,7 @@ export default function HeroSection() {
             {/* Background Image & Gradient overlay */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop")' }}
+                style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")' }}
             >
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent mix-blend-multiply"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-textDark/90 via-textDark/40 to-transparent"></div>

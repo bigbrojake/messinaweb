@@ -6,7 +6,7 @@ export default function FeaturesSection() {
     return (
         <section className="py-24 px-6 max-w-7xl mx-auto relative z-20">
             <div className="mb-16 text-center">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-4">Core Consulting Pillars</h2>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-4">Core Messina Pillars</h2>
                 <p className="text-gray-500 font-body max-w-2xl mx-auto">
                     Delivering precision consulting through proven methodologies, integrated telemetries, and flexible scaling.
                 </p>

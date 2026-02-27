@@ -40,9 +40,9 @@ export default function Methodology() {
     }, []);
 
     return (
-        <section ref={containerRef} className="py-24 md:py-32 w-full bg-textDark relative z-10">
-            <div className="max-w-4xl mx-auto px-6 text-center mb-24">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-4">MTS Client Success Approach</h2>
+        <section ref={containerRef} className="py-16 md:py-20 w-full bg-textDark relative z-10">
+            <div className="max-w-4xl mx-auto px-6 text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">MTS Client Success Approach</h2>
                 <p className="text-accent font-mono text-sm tracking-widest uppercase mb-12">Methodology Protocol</p>
             </div>
 
@@ -50,7 +50,7 @@ export default function Methodology() {
                 {/* Vertical Line */}
                 <div className="absolute left-[28px] md:left-1/2 top-0 bottom-0 w-1 bg-gray-800 -translate-x-1/2"></div>
 
-                <div className="flex flex-col gap-12 md:gap-24 relative">
+                <div className="flex flex-col gap-8 md:gap-12 relative">
                     {steps.map((step, i) => {
                         const isEven = i % 2 === 0;
                         return (
@@ -65,7 +65,7 @@ export default function Methodology() {
                                 <div className={`w-full md:w-[45%] pl-16 md:pl-0 ${isEven ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
                                     <div className="bg-background rounded-2xl p-6 md:p-8 shadow-xl border border-gray-100 hover:scale-[1.02] transition-transform duration-300">
                                         <span className="text-accent font-mono font-bold text-sm mb-2 block tracking-widest">PHASE {step.num}</span>
-                                        <h3 className="text-2xl font-heading font-bold text-primary mb-3">
+                                        <h3 className="text-xl font-heading font-bold text-primary mb-2">
                                             {step.title}
                                         </h3>
                                         <p className="text-gray-600 font-body text-[15px] leading-relaxed">

@@ -38,7 +38,7 @@ export default function RoiDashboard() {
     }, []);
 
     return (
-        <section ref={containerRef} className="pt-32 pb-24 px-6 max-w-7xl mx-auto w-full">
+        <section ref={containerRef} className="py-24 px-6 max-w-7xl mx-auto w-full border-t border-gray-100 mt-12">
             <div className="mb-20 text-center">
                 <h1 className="text-sm font-mono tracking-widest uppercase text-accent font-semibold mb-4">The Impact Archive</h1>
                 <h2 className="text-5xl md:text-7xl font-heading font-black text-primary uppercase tracking-tighter">ROI Dashboards</h2>

@@ -4,9 +4,9 @@ import ExecutiveTestimonials from '../components/case-studies/ExecutiveTestimoni
 
 export default function CaseStudies() {
     return (
-        <div className="w-full bg-background min-h-screen">
-            <RoiDashboard />
+        <div className="w-full bg-background min-h-screen pt-24 mt-2">
             <CaseStudyGrids />
+            <RoiDashboard />
             <ExecutiveTestimonials />
         </div>
     );

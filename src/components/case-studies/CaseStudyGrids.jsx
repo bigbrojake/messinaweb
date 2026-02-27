@@ -33,7 +33,7 @@ export default function CaseStudyGrids() {
   ];
 
   return (
-    <section className="py-24 px-6 w-full max-w-7xl mx-auto relative z-10 border-t border-gray-100 mt-12">
+    <section className="pb-24 pt-8 px-6 w-full max-w-7xl mx-auto relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         {studies.map((study, i) => (
           <div key={i} className="group flex flex-col gap-6 cursor-pointer">
