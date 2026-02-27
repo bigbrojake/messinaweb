@@ -1,4 +1,5 @@
 import HeroSection from '../components/home/HeroSection';
+import ValueHighlights from '../components/home/ValueHighlights';
 import TrustAwards from '../components/home/TrustAwards';
 import FeaturesSection from '../components/home/FeaturesSection';
 import Methodology from '../components/home/Methodology';
@@ -8,6 +9,7 @@ export default function Home() {
     return (
         <div className="w-full bg-background relative z-0">
             <HeroSection />
+            <ValueHighlights />
             <TrustAwards />
             <FeaturesSection />
             <Methodology />

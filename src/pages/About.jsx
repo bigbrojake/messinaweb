@@ -5,7 +5,7 @@ import CoreValues from '../components/about/CoreValues';
 
 export default function About() {
     return (
-        <div className="w-full bg-background">
+        <div className="w-full bg-background pt-24">
             <Manifesto />
             <TeamGrid />
             <CommunityImpact />

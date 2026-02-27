@@ -15,11 +15,15 @@ export default function Manifesto() {
                 const text = textRef.current.innerText;
                 textRef.current.innerHTML = '';
                 const words = text.split(' ');
-                words.forEach(word => {
+                words.forEach((word, index) => {
                     const span = document.createElement('span');
                     span.className = 'inline-block opacity-0 translate-y-4';
-                    span.innerHTML = word + '&nbsp;';
+                    span.innerText = word;
                     textRef.current.appendChild(span);
+
+                    if (index < words.length - 1) {
+                        textRef.current.appendChild(document.createTextNode(' '));
+                    }
                 });
 
                 gsap.to(textRef.current.children, {
