@@ -47,15 +47,21 @@ export default function ValueHighlights() {
     }, []);
 
     return (
-        <section ref={containerRef} className="py-20 px-6 max-w-7xl mx-auto relative z-20 -mt-16 md:-mt-24">
+        <section ref={containerRef} className="py-24 px-6 max-w-7xl mx-auto relative z-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {highlights.map((item, i) => (
-                    <div key={i} className="highlight-card bg-white rounded-3xl p-8 shadow-xl border border-gray-100/50 backdrop-blur-md hover:shadow-2xl transition-shadow duration-300">
-                        <div className="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
-                            {item.icon}
+                    <div key={i} className="highlight-card group relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100/50 backdrop-blur-md transition-all duration-500 hover:shadow-2xl overflow-hidden cursor-pointer">
+                        {/* Dynamic Gradient Background Glow */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl z-0"></div>
+
+                        <div className="relative z-10 w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-500 transform group-hover:scale-110 group-hover:-rotate-3">
+                            {/* We override the child text color with group-hover text color cascade */}
+                            <div className="text-accent group-hover:text-white transition-colors duration-500">
+                                {item.icon}
+                            </div>
                         </div>
-                        <h3 className="text-xl font-heading font-bold text-primary mb-3">{item.title}</h3>
-                        <p className="text-gray-600 font-body text-sm leading-relaxed">{item.desc}</p>
+                        <h3 className="relative z-10 text-xl font-heading font-bold text-primary mb-3 group-hover:text-accent transition-colors duration-300">{item.title}</h3>
+                        <p className="relative z-10 text-gray-600 font-body text-sm leading-relaxed">{item.desc}</p>
                     </div>
                 ))}
             </div>

@@ -7,10 +7,10 @@ export default function TeamGrid() {
   ];
 
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto bg-background rounded-[3rem] -mt-12 relative z-20 shadow-xl border border-gray-100">
-      <div className="mb-16">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">Our Leadership</h2>
-        <p className="text-gray-500 font-body max-w-2xl text-lg">
+    <section className="py-24 px-6 max-w-7xl mx-auto relative z-20">
+      <div className="mb-16 text-center">
+        <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-4">Meet the team</h2>
+        <p className="text-gray-500 font-body max-w-2xl mx-auto">
           The minds behind the architecture.
         </p>
       </div>
