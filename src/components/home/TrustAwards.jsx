@@ -5,7 +5,7 @@ export default function TrustAwards() {
 
                 <div className="flex-1">
                     <h2 className="text-xl md:text-2xl font-heading font-bold text-accent mb-2">
-                        Award Winning Dell Partners
+                        The Dell Legacy
                     </h2>
                     <p className="text-sm md:text-base font-body text-white/80 max-w-lg">
                         Proven excellence and partnership driving your critical IT infrastructure forwards.
